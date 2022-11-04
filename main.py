@@ -1,5 +1,4 @@
 list_one = ["desk", "chair", "computer"]
-
 def list_sayer(list_one):
   if len(list_one) == 0:
     print("the list is empty")
@@ -11,8 +10,8 @@ def list_sayer(list_one):
 list_sayer(list_one)
 
 
-dict_one = {"Burkina_Faso": "Ouagadougou", "Kazakhstan": "Nur-Sultan", "Japan": "Tokyo", "Peru": "Lima"}
 
+dict_one = {"Burkina_Faso": "Ouagadougou", "Kazakhstan": "Nur-Sultan", "Japan": "Tokyo", "Peru": "Lima"}
 def dict_sayer(dict_one):
   if len(dict_one) == 0:
     print("The dictionary is empty!")
@@ -21,5 +20,12 @@ def dict_sayer(dict_one):
     for key, value in dict_one.items():
       print(f"the capital of {key} is {value}")
     return True
-
 dict_sayer(dict_one)
+
+
+dict_age = {"Joey": 28, "Jim": 46, "Billy": 10}
+def Greatest(dict_age):
+  for key, value in dict_age.items():
+    if value == max(dict_age.values()):
+      return (key, value)
+Greatest(dict_age)
