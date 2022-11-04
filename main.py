@@ -37,8 +37,6 @@ def zipper(list1, list2):
     for index in range(len(list1)):
       both_lists_dict[list1[index]] = list2[index]
     print(both_lists_dict)
-  elif len(list1) != len(list2):
-    return (list1, len(list1), list2, len(list2))
   else:
-    print("The argument contains an empty list")
+    return (list1, len(list1), list2, len(list2))
 zipper(list1, list2)
