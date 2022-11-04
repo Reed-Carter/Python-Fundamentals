@@ -10,7 +10,6 @@ def list_sayer(list_one):
 list_sayer(list_one)
 
 
-
 dict_one = {"Burkina_Faso": "Ouagadougou", "Kazakhstan": "Nur-Sultan", "Japan": "Tokyo", "Peru": "Lima"}
 def dict_sayer(dict_one):
   if len(dict_one) == 0:
@@ -29,3 +28,17 @@ def Greatest(dict_age):
     if value == max(dict_age.values()):
       return (key, value)
 Greatest(dict_age)
+
+list1 = ["vanilla", "cherry"]
+list2 = ["cake", "ice_cream", "pistachio"]
+def zipper(list1, list2):
+  both_lists_dict = {}
+  if len(list1) == len(list2):
+    for index in range(len(list1)):
+      both_lists_dict[list1[index]] = list2[index]
+    print(both_lists_dict)
+  elif len(list1) != len(list2):
+    return (list1, len(list1), list2, len(list2))
+  else:
+    print("The argument contains an empty list")
+zipper(list1, list2)
