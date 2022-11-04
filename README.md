@@ -6,10 +6,9 @@
 
 ## Technologies Used
 
-* HTML
-* CSS
-* JS
+* Python
 * GitHub
+* jupyterlab==3.3.2
 
 ## Description
 
