@@ -13,7 +13,7 @@ list_sayer(list_one)
 dict_one = {"Burkina_Faso": "Ouagadougou", "Kazakhstan": "Nur-Sultan", "Japan": "Tokyo", "Peru": "Lima"}
 def dict_sayer(dict_one):
   if len(dict_one) == 0:
-    print("The dictionary entered is empty!")
+    print("The dictionary entered is empty")
     return False
   else:
     for key, value in dict_one.items():
